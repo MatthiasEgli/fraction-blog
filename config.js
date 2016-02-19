@@ -29,6 +29,7 @@ config = {
     url: process.env.HEROKU_URL,
     mail: {
       transport: 'SMTP',
+      from: '"Matthias" <me@fraction.ch>',
       options: {
         service: 'Postmark',
         auth: {
