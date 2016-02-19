@@ -30,10 +30,10 @@ config = {
     mail: {
       transport: 'SMTP',
       options: {
-        service: 'Mailgun',
+        service: 'Postmark',
         auth: {
-          user: process.env.MAILGUN_SMTP_LOGIN,
-          pass: process.env.MAILGUN_SMTP_PASSWORD
+          user: process.env.POSTMARK_API_TOKEN,
+          pass: process.env.POSTMARK_API_TOKEN
         }
       }
     },
